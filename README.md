@@ -94,6 +94,9 @@ Your Top Answers:
 - `top-k` context retrieval is configurable (default `k=2`)
 - Fitness StackExchange data was filtered to only include answers with a score ≥ 2
 - Preprocessing handled tokenization, cleaning, and XML-to-JSON conversion
+- Due to file size constraints, raw data files (e.g., fitness.stackexchange.com.xml) are not included. To generate the required datasets:
+  - Run 00_Parse_Fitness_XML.ipynb to create fitness_squad_filtered.json
+  - Run 00_Convert_SQuAD_CSV_to_JSON.ipynb if you're working from CSV versions of SQuAD 2.0
 
 ## 📌 Licensing & Data Sources
 
