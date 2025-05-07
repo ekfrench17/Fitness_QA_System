@@ -27,16 +27,12 @@ project-root/
 │
 ├── data/
 │   ├── fitness_squad_filtered.json         # Final domain-specific QA dataset
-│   ├── train.csv                           # SQuAD 2.0 training data
-│   ├── validation.csv                      # SQuAD 2.0 validation data
-│   ├── train.json                          # SQuAD 2.0 converted to JSON
-│   └── validation.json                     # SQuAD 2.0 validation in JSON format
 │
 ├── notebooks/
-│   ├── 00_Parse_Fitness_XML.ipynb
+│   ├── 00_Parse_Fitness_XML.ipynb			# Convert StackExchange raw data to XML
 │   ├── 00_Convert_SQuAD_CSV_to_JSON.ipynb
-│   ├── 01_TFIDF_Word2Vec_QA.ipynb
-│   ├── 02_BERT_Finetuning_SQuAD.ipynb
+│   ├── 01_TFIDF_Word2Vec_QA.ipynb		# Run & Assess hybrid pipeline - includes user interface portion
+│   ├── 02_BERT_Finetuning_SQuAD.ipynb	# Fine-tune BERT model
 │
 ├── models/
 │   └── word2vec_fitness.model              # Trained Word2Vec model
